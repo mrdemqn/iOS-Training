@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  BusinessCardApplication
+//  iOSTraining
 //
 //  Created by Димон on 14.06.23.
 //
