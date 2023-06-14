@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Childhood And Youth Photo View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChildhoodAndYouthPhotoViewController" id="Y6W-OH-hqX" customClass="ChildhoodAndYouthPhotoViewController" customModule="BusinessCardApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="child1" translatesAutoresizingMaskIntoConstraints="NO" id="YJH-nq-Ivm">
+                                <rect key="frame" x="0.0" y="59" width="393" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="eTR-xJ-YLZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="child2" translatesAutoresizingMaskIntoConstraints="NO" id="LnX-Gf-DBN">
+                                <rect key="frame" x="0.0" y="279" width="393" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="e8b-LK-x9f"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="child2" translatesAutoresizingMaskIntoConstraints="NO" id="DDv-ky-MYh">
+                                <rect key="frame" x="0.0" y="497" width="393" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="ngg-S4-T8c"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YJH-nq-Ivm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2XY-TE-v2a"/>
+                            <constraint firstItem="LnX-Gf-DBN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7bc-X5-IJE"/>
+                            <constraint firstItem="DDv-ky-MYh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Hji-DA-AaV"/>
+                            <constraint firstItem="YJH-nq-Ivm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="JqF-dJ-zBV"/>
+                            <constraint firstItem="YJH-nq-Ivm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Uvs-zR-kmu"/>
+                            <constraint firstItem="LnX-Gf-DBN" firstAttribute="top" secondItem="YJH-nq-Ivm" secondAttribute="bottom" id="XiN-HM-M3x"/>
+                            <constraint firstItem="YJH-nq-Ivm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="m9M-vm-kU7"/>
+                            <constraint firstItem="YJH-nq-Ivm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="r0m-Xe-xP1"/>
+                            <constraint firstItem="DDv-ky-MYh" firstAttribute="top" secondItem="LnX-Gf-DBN" secondAttribute="bottom" constant="-2" id="rGl-oz-W9T"/>
+                            <constraint firstItem="LnX-Gf-DBN" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="rno-kf-YrQ"/>
+                            <constraint firstItem="DDv-ky-MYh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rzf-wi-I6O"/>
+                            <constraint firstItem="YJH-nq-Ivm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xPe-ai-4cF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16.030534351145036" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="child1" width="1600" height="900"/>
+        <image name="child2" width="1600" height="900"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
