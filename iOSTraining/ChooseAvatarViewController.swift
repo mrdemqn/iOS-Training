@@ -1,0 +1,41 @@
+//
+//  ChooseAvatarViewController.swift
+//  iOSTraining
+//
+//  Created by Димон on 15.06.23.
+//
+
+import UIKit
+
+class ChooseAvatarViewController: UIViewController {
+    
+    @IBOutlet private weak var spiderAvatarImageView: UIImageView!
+    @IBOutlet private weak var personAvatarImageView: UIImageView!
+    @IBOutlet private weak var crownAvatarImageView: UIImageView!
+    @IBOutlet private weak var starAvatarImageView: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let spiderTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.chooseAvatarAction))
+        let personTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.chooseAvatarAction))
+        let crownTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.chooseAvatarAction))
+        let starTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.chooseAvatarAction))
+        
+        spiderAvatarImageView.addGestureRecognizer(spiderTapGesture)
+        personAvatarImageView.addGestureRecognizer(personTapGesture)
+        crownAvatarImageView.addGestureRecognizer(crownTapGesture)
+        starAvatarImageView.addGestureRecognizer(starTapGesture)
+    }
+    
+    @objc func chooseAvatarAction(recognizer: UITapGestureRecognizer) {
+        let customizeViewController = NavigationHelper.receiveCustomizeViewController(navigationController)
+        
+        if recognizer.view is UIImageView {
+            if let view = recognizer.view {
+                let imageView = view as? UIImageView
+                customizeViewController?.profile?.avatarImage = imageView?.image
+            }
+        }
+        navigationController?.popToRootViewController(animated: true)
+    }
+}

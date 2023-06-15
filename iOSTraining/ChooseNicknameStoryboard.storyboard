@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Nickname View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChooseNicknameViewController" id="Y6W-OH-hqX" customClass="ChooseNicknameViewController" customModule="iOSTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose nickname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kx-Vb-FpX">
+                                <rect key="frame" x="25" y="59" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoW-6K-5sf">
+                                <rect key="frame" x="25" y="115" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9Wc-Oo-jJb"/>
+                                </constraints>
+                                <color key="tintColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Frog">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="strokeColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chooseNicknameAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Pex-8U-3od"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf0-t1-TqF">
+                                <rect key="frame" x="25" y="170" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="RA9-Y5-ov0"/>
+                                </constraints>
+                                <color key="tintColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hummer">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="strokeColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chooseNicknameAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ck4-jX-XFd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fst-AE-y1A">
+                                <rect key="frame" x="25" y="225" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="c1y-kr-EZw"/>
+                                </constraints>
+                                <color key="tintColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="King">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="strokeColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chooseNicknameAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NN8-L8-y1F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5x-15-Cwi">
+                                <rect key="frame" x="25" y="280" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Fnr-uB-DJD"/>
+                                </constraints>
+                                <color key="tintColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gun">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="strokeColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chooseNicknameAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Wsc-zx-8kh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pf0-t1-TqF" secondAttribute="trailing" constant="25" id="1fF-Mk-ali"/>
+                            <constraint firstItem="fst-AE-y1A" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="6Jo-rW-VkD"/>
+                            <constraint firstItem="4Kx-Vb-FpX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="FBk-DE-MGn"/>
+                            <constraint firstItem="fst-AE-y1A" firstAttribute="top" secondItem="pf0-t1-TqF" secondAttribute="bottom" constant="20" id="Jwk-fE-z51"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fst-AE-y1A" secondAttribute="trailing" constant="25" id="MKU-sd-KUk"/>
+                            <constraint firstItem="P5x-15-Cwi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="RBS-8h-IUg"/>
+                            <constraint firstItem="pf0-t1-TqF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="UVI-Fs-Ov1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yoW-6K-5sf" secondAttribute="trailing" constant="25" id="WMl-zZ-P4k"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4Kx-Vb-FpX" secondAttribute="trailing" constant="25" id="YYP-r9-lLS"/>
+                            <constraint firstItem="yoW-6K-5sf" firstAttribute="top" secondItem="4Kx-Vb-FpX" secondAttribute="bottom" constant="35" id="ad5-L0-DS1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="P5x-15-Cwi" secondAttribute="trailing" constant="25" id="gJV-II-BRL"/>
+                            <constraint firstItem="pf0-t1-TqF" firstAttribute="top" secondItem="yoW-6K-5sf" secondAttribute="bottom" constant="20" id="jMi-kF-ylv"/>
+                            <constraint firstItem="P5x-15-Cwi" firstAttribute="top" secondItem="fst-AE-y1A" secondAttribute="bottom" constant="20" id="mJt-gM-Bed"/>
+                            <constraint firstItem="yoW-6K-5sf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="noL-3g-JPb"/>
+                            <constraint firstItem="4Kx-Vb-FpX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="pxG-qq-H69"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstNicknameButton" destination="yoW-6K-5sf" id="iuX-kn-HbR"/>
+                        <outlet property="fourthNicknameButton" destination="P5x-15-Cwi" id="N63-8c-VAM"/>
+                        <outlet property="secondNicknameButton" destination="pf0-t1-TqF" id="cyJ-1K-gjp"/>
+                        <outlet property="thirdNicknameButton" destination="fst-AE-y1A" id="r1i-8J-zbr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

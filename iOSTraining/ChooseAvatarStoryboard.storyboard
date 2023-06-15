@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Avatar View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChooseAvatarViewController" id="Y6W-OH-hqX" customClass="ChooseAvatarViewController" customModule="iOSTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose avatar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oou-kH-c1E">
+                                <rect key="frame" x="25" y="59" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ant" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jS2-3Y-37C">
+                                <rect key="frame" x="25" y="88.999999999999986" width="150" height="151.66666666666669"/>
+                                <color key="tintColor" red="0.68235294117647061" green="0.32156862745098036" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ZDj-oq-7tQ"/>
+                                    <constraint firstAttribute="height" constant="150" id="m0Y-Qa-CA9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YRX-F2-2Eb">
+                                <rect key="frame" x="218" y="91.999999999999986" width="150" height="146.66666666666669"/>
+                                <color key="tintColor" red="0.68235294120000001" green="0.32156862749999998" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Bhd-KE-Cqz"/>
+                                    <constraint firstAttribute="width" constant="150" id="aeE-qI-Tcp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I4e-7c-KMG">
+                                <rect key="frame" x="25" y="274.66666666666669" width="150" height="148"/>
+                                <color key="tintColor" red="0.68235294120000001" green="0.32156862749999998" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3HK-vR-prH"/>
+                                    <constraint firstAttribute="height" constant="150" id="R4U-7h-e2H"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SrO-ES-91H">
+                                <rect key="frame" x="218" y="273.66666666666669" width="150" height="149.66666666666669"/>
+                                <color key="tintColor" red="0.68235294120000001" green="0.32156862749999998" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="GO1-hM-TPS"/>
+                                    <constraint firstAttribute="width" constant="150" id="Vvy-EL-JEa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SrO-ES-91H" secondAttribute="trailing" constant="25" id="6yD-FM-j9e"/>
+                            <constraint firstItem="I4e-7c-KMG" firstAttribute="top" secondItem="jS2-3Y-37C" secondAttribute="bottom" constant="34" id="CgO-5Z-B9h"/>
+                            <constraint firstItem="YRX-F2-2Eb" firstAttribute="centerY" secondItem="jS2-3Y-37C" secondAttribute="centerY" id="L0K-WI-bE7"/>
+                            <constraint firstItem="I4e-7c-KMG" firstAttribute="centerX" secondItem="jS2-3Y-37C" secondAttribute="centerX" id="Plx-9w-Uf1"/>
+                            <constraint firstItem="Oou-kH-c1E" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ZnH-Aq-ta0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Oou-kH-c1E" secondAttribute="trailing" constant="25" id="aFF-OP-ayA"/>
+                            <constraint firstItem="I4e-7c-KMG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="f1X-bP-7tH"/>
+                            <constraint firstItem="jS2-3Y-37C" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="iyC-E6-oYm"/>
+                            <constraint firstItem="SrO-ES-91H" firstAttribute="centerY" secondItem="I4e-7c-KMG" secondAttribute="centerY" id="oaI-KM-Rgc"/>
+                            <constraint firstItem="jS2-3Y-37C" firstAttribute="top" secondItem="Oou-kH-c1E" secondAttribute="bottom" constant="10" id="qZh-RZ-IrH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YRX-F2-2Eb" secondAttribute="trailing" constant="25" id="tm6-FK-MKq"/>
+                            <constraint firstItem="Oou-kH-c1E" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="zvk-u8-b0h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="crownAvatarImageView" destination="I4e-7c-KMG" id="B1I-5q-UAb"/>
+                        <outlet property="personAvatarImageView" destination="YRX-F2-2Eb" id="8nf-Zf-jET"/>
+                        <outlet property="spiderAvatarImageView" destination="jS2-3Y-37C" id="BPo-To-JrR"/>
+                        <outlet property="starAvatarImageView" destination="SrO-ES-91H" id="4eg-FK-Dhy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ant" catalog="system" width="106" height="128"/>
+        <image name="crown" catalog="system" width="128" height="92"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

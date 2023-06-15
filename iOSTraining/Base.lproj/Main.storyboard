@@ -8,25 +8,101 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSTraining" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="iOSTraining" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="we9-5N-eWL">
+                                <rect key="frame" x="96" y="194" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.68235294120000001" green="0.32156862749999998" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="dUS-ip-uo6"/>
+                                    <constraint firstAttribute="width" constant="200" id="qtf-Dl-cfI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdN-tL-bwV">
+                                <rect key="frame" x="149.66666666666666" y="419" width="93" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfh-74-mbc">
+                                <rect key="frame" x="25" y="483" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="YRf-Yf-OnM"/>
+                                </constraints>
+                                <color key="tintColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Customize">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="strokeColor" red="0.44346159699999999" green="0.079259090130000001" blue="0.49022299050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="routeCustomizeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfd-fd-awi"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-ia-zrQ">
+                                <rect key="frame" x="96" y="194" width="200" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Avatar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLg-xm-Bwp">
+                                        <rect key="frame" x="72.666666666666657" y="93" width="55" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstItem="zLg-xm-Bwp" firstAttribute="centerX" secondItem="dVI-ia-zrQ" secondAttribute="centerX" id="VAx-rI-rth"/>
+                                    <constraint firstItem="zLg-xm-Bwp" firstAttribute="centerY" secondItem="dVI-ia-zrQ" secondAttribute="centerY" id="rPD-Ou-C6j"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="we9-5N-eWL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="1mG-Qe-0JY"/>
+                            <constraint firstItem="Tfh-74-mbc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="4MO-Db-Jji"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tfh-74-mbc" secondAttribute="trailing" constant="25" id="AJa-7H-mQS"/>
+                            <constraint firstItem="dVI-ia-zrQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="Cup-ps-2YB"/>
+                            <constraint firstItem="we9-5N-eWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="Eto-EN-KJl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dVI-ia-zrQ" secondAttribute="trailing" constant="97" id="Fuz-d7-Gs1"/>
+                            <constraint firstItem="ZdN-tL-bwV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Gp1-VS-INX"/>
+                            <constraint firstItem="dVI-ia-zrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="HWx-G6-uBN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Tfh-74-mbc" secondAttribute="bottom" constant="50" id="bG6-DT-YNq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZdN-tL-bwV" secondAttribute="trailing" constant="25" id="bzf-gT-1aN"/>
+                            <constraint firstItem="ZdN-tL-bwV" firstAttribute="top" secondItem="we9-5N-eWL" secondAttribute="bottom" constant="25" id="i7M-2y-Nmh"/>
+                            <constraint firstItem="ZdN-tL-bwV" firstAttribute="centerX" secondItem="we9-5N-eWL" secondAttribute="centerX" id="orX-hl-hML"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="we9-5N-eWL" secondAttribute="trailing" constant="97" id="vn3-Nj-WGn"/>
+                            <constraint firstItem="Tfh-74-mbc" firstAttribute="top" secondItem="ZdN-tL-bwV" secondAttribute="bottom" constant="35" id="xkN-OA-JCU"/>
+                            <constraint firstItem="ZdN-tL-bwV" firstAttribute="top" secondItem="dVI-ia-zrQ" secondAttribute="bottom" constant="25" id="y6u-uA-XZ5"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Dba-9v-Jbb"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="we9-5N-eWL" id="Iye-81-WzV"/>
+                        <outlet property="avatarPlaceholderView" destination="dVI-ia-zrQ" id="y9d-fk-yQh"/>
+                        <outlet property="nicknameLabel" destination="ZdN-tL-bwV" id="afn-b9-guk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="2909.1603053435115" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
