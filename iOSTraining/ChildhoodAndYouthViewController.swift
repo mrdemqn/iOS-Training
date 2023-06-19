@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChildhoodAndYouthViewController: UIViewController {
+final class ChildhoodAndYouthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

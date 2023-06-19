@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChildhoodAndYouthPhotoViewController: UIViewController {
+final class ChildhoodAndYouthPhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

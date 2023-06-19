@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstStepsGloryViewController: UIViewController {
+final class FirstStepsGloryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

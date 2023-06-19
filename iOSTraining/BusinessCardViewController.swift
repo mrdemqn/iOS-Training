@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BusinessCardViewController: UIViewController {
+final class BusinessCardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
