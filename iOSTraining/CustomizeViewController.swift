@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomizeViewController: UIViewController {
+final class CustomizeViewController: UIViewController {
     
     @IBOutlet private weak var avatarPlaceholderView: UIView!
     @IBOutlet private weak var avatarImageView: UIImageView!
@@ -15,17 +15,15 @@ class CustomizeViewController: UIViewController {
     @IBOutlet private weak var nicknameLabel: UILabel!
     
     var delegate: ProfileDelegate?
-    var profile: Profile?
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         setProfileData()
         switchImagePlaceholder()
-        
     }
     
     @IBAction func saveAction(_ sender: Any) {
-        if let profile = profile {
+        if let profile = delegate?.profile {
             delegate?.saveProfile(profile: profile)
             dismiss(animated: true)
         }
@@ -41,7 +39,7 @@ class CustomizeViewController: UIViewController {
     }
     
     private func switchImagePlaceholder() {
-        if profile?.avatarImage != nil {
+        if delegate?.profile.avatarImage != nil {
             avatarPlaceholderView.isHidden = true
             avatarImageView.isHidden = false
             avatarImageView.roundWithBorder()
@@ -54,7 +52,7 @@ class CustomizeViewController: UIViewController {
     }
     
     private func setProfileData() {
-        if let profile = profile {
+        if let profile = delegate?.profile {
             avatarImageView.image = profile.avatarImage
             nicknameLabel.text = profile.nickname
         }

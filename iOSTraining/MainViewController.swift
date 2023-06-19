@@ -7,14 +7,14 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     
     @IBOutlet private weak var avatarPlaceholderView: UIView!
     @IBOutlet private weak var avatarImageView: UIImageView!
     
     @IBOutlet private weak var nicknameLabel: UILabel!
     
-    var profile = Profile.init()
+    var profile: Profile = Profile.init()
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
         let viewController = NavigationHelper.receiveViewController("CustomizeStoryboard", "CustomizeViewController") as! CustomizeViewController
         let navigation = UINavigationController(rootViewController: viewController)
         viewController.delegate = self
-        viewController.profile = profile
+        viewController.delegate?.profile = self.profile
         
         present(navigation, animated: true)
     }

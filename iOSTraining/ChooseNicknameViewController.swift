@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChooseNicknameViewController: UIViewController {
+final class ChooseNicknameViewController: UIViewController {
     
     @IBOutlet private weak var firstNicknameButton: UIButton!
     @IBOutlet private weak var secondNicknameButton: UIButton!
@@ -23,14 +23,14 @@ class ChooseNicknameViewController: UIViewController {
     }
     
     @IBAction private func chooseNicknameAction(_ sender: UIButton) {
-        customizeViewController?.profile?.nickname = sender.titleLabel?.text ?? ""
+        customizeViewController?.delegate?.profile.nickname = sender.titleLabel?.text ?? ""
         
         let viewController = NavigationHelper.receiveViewController("ChooseAvatarStoryboard", "ChooseAvatarViewController")
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     private func defineTextButtons() {
-        if customizeViewController?.profile?.isMale == false {
+        if customizeViewController?.delegate?.profile.isMale == false {
             firstNicknameButton.setTitle("Fox", for: .normal)
             secondNicknameButton.setTitle("Mirror", for: .normal)
             thirdNicknameButton.setTitle("Queen", for: .normal)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChooseAvatarViewController: UIViewController {
+final class ChooseAvatarViewController: UIViewController {
     
     @IBOutlet private weak var spiderAvatarImageView: UIImageView!
     @IBOutlet private weak var personAvatarImageView: UIImageView!
@@ -33,7 +33,7 @@ class ChooseAvatarViewController: UIViewController {
         if recognizer.view is UIImageView {
             if let view = recognizer.view {
                 let imageView = view as? UIImageView
-                customizeViewController?.profile?.avatarImage = imageView?.image
+                customizeViewController?.delegate?.profile.avatarImage = imageView?.image
             }
         }
         navigationController?.popToRootViewController(animated: true)

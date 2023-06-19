@@ -8,6 +8,8 @@
 import UIKit
 
 protocol ProfileDelegate {
+    var profile: Profile { get set }
+    
     func saveProfile(profile: Profile)
 }
 
