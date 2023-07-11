@@ -12,17 +12,19 @@ final class MainViewController: UIViewController {
     @IBOutlet private weak var avatarPlaceholderView: UIView!
     @IBOutlet private weak var avatarImageView: UIImageView!
     
+    @IBOutlet private weak var tabBar: UITabBar!
     @IBOutlet private weak var nicknameLabel: UILabel!
     
-    var profile: Profile = Profile.init()
+    var profile: Profile = Profile()
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         switchImagePlaceholder()
     }
     
-    @IBAction func routeCustomizeAction(_ sender: Any) {
-        let viewController = NavigationHelper.receiveViewController("CustomizeStoryboard", "CustomizeViewController") as! CustomizeViewController
+    @IBAction func routeCustomizeAction() {
+        let viewController = getViewController(CustomiseViewController.self,
+                                                    NavigationKeys.customise)
         let navigation = UINavigationController(rootViewController: viewController)
         viewController.delegate = self
         viewController.delegate?.profile = self.profile
@@ -39,7 +41,7 @@ final class MainViewController: UIViewController {
             avatarPlaceholderView.isHidden = false
             avatarImageView.isHidden = true
             avatarPlaceholderView.roundWithBorder()
-            avatarPlaceholderView.backgroundColor = UIColor.init(red: 242, green: 242, blue: 242, alpha: 1.0)
+            avatarPlaceholderView.backgroundColor = .appGrey
         }
     }
 }

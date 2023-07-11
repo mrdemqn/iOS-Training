@@ -27,13 +27,13 @@ final class ChooseAvatarViewController: UIViewController {
         starAvatarImageView.addGestureRecognizer(starTapGesture)
     }
     
-    @objc func chooseAvatarAction(recognizer: UITapGestureRecognizer) {
-        let customizeViewController = NavigationHelper.receiveCustomizeViewController(navigationController)
+    @objc private func chooseAvatarAction(recognizer: UITapGestureRecognizer) {
+        let customizeViewController = getCustomizeViewController(navigationController)
         
         if recognizer.view is UIImageView {
             if let view = recognizer.view {
                 let imageView = view as? UIImageView
-                customizeViewController?.delegate?.profile.avatarImage = imageView?.image
+                customizeViewController.delegate?.profile.avatarImage = imageView?.image
             }
         }
         navigationController?.popToRootViewController(animated: true)

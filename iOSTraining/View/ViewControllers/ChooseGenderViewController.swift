@@ -10,10 +10,12 @@ import UIKit
 final class ChooseGenderViewController: UIViewController {
     
     @IBAction private func chooseGenderAction(_ sender: UIButton) {
-        let customizeViewController = NavigationHelper.receiveCustomizeViewController(navigationController)
-        customizeViewController?.delegate?.profile.gender = sender.titleLabel?.text ?? ""
+        let customizeViewController = getCustomizeViewController(navigationController)
+        customizeViewController.delegate?.profile.gender = sender.titleLabel?.text ?? ""
         
-        let viewController = NavigationHelper.receiveViewController("ChooseNicknameStoryboard", "ChooseNicknameViewController")
+        let viewController = getViewController(ChooseNicknameViewController.self,
+                                               NavigationKeys.chooseNickname)
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
+

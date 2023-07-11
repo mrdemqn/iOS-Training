@@ -68,7 +68,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="routeCustomizeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfd-fd-awi"/>
+                                    <action selector="routeCustomizeAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="6BP-MO-rDM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,7 +80,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tfh-74-mbc" secondAttribute="trailing" constant="25" id="AJa-7H-mQS"/>
                             <constraint firstItem="dVI-ia-zrQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="Cup-ps-2YB"/>
                             <constraint firstItem="ZdN-tL-bwV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Gp1-VS-INX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Tfh-74-mbc" secondAttribute="bottom" constant="5" id="bG6-DT-YNq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZdN-tL-bwV" secondAttribute="trailing" constant="25" id="bzf-gT-1aN"/>
                             <constraint firstItem="dVI-ia-zrQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fXN-5c-doC"/>
                             <constraint firstItem="we9-5N-eWL" firstAttribute="centerX" secondItem="dVI-ia-zrQ" secondAttribute="centerX" id="gul-Ez-n3d"/>
