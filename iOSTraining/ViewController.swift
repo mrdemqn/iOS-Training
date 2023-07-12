@@ -116,10 +116,14 @@ extension ViewController {
         tableView.isEditing.toggle()
         
         if tableView.isEditing {
-            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(editAction))
+            navigationItem.leftBarButtonItem = createBarButton("Done")
         } else {
-            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(editAction))
+            navigationItem.leftBarButtonItem = createBarButton("Edit")
         }
+    }
+    
+    private func createBarButton(_ title: String) -> UIBarButtonItem {
+        return UIBarButtonItem(title: title, style: .plain, target: self, action: #selector(editAction))
     }
     
     private func saveCompletion(person: Person) {
@@ -163,10 +167,13 @@ extension ViewController {
             let key = sections[indexPath.section]
             guard personNames[key] == nil else { return }
             
-            let indexSet = IndexSet(arrayLiteral: indexPath.section)
-            
             sections.remove(at: indexPath.section)
-            tableView.deleteSections(indexSet, with: .bottom)
+            tableView.deleteSections([indexPath.section], with: .bottom)
+            
+            print("Sections: \(sections)")
+            if personNames.isEmpty && sections.isEmpty {
+                editAction()
+            }
         }
     }
 }

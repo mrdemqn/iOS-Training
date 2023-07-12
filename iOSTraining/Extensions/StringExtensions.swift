@@ -11,4 +11,6 @@ extension String {
     func trimmingLeadingAndTrailingSpaces(using characterSet: CharacterSet = .whitespacesAndNewlines) -> String {
         return trimmingCharacters(in: characterSet)
     }
+    
+    var isNotEmpty: Bool { !isEmpty }
 }

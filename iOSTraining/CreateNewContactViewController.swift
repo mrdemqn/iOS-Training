@@ -25,7 +25,9 @@ final class CreateNewContactViewController: UIViewController {
     
     @IBAction private func saveAction() {
         guard let name = nameTextField.text,
-              let surname = surnameTextFIeld.text else { return }
+                name.trimmingLeadingAndTrailingSpaces().isNotEmpty,
+              let surname = surnameTextFIeld.text,
+                surname.trimmingLeadingAndTrailingSpaces().isNotEmpty else { return }
         
         let trimName = name.trimmingLeadingAndTrailingSpaces()
         let trimSurname = surname.trimmingLeadingAndTrailingSpaces()
