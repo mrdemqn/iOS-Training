@@ -36,7 +36,7 @@ final class ViewController: UIViewController {
         let nibHeader = UINib(nibName: "\(TableViewHeader.self)", bundle: nil)
         tableView.register(nibHeader, forCellReuseIdentifier: "Header")
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(pushAddItemAction))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(routeCreateContactAction))
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(editAction))
     }
@@ -91,6 +91,10 @@ extension ViewController: UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40
+    }
 }
 
 extension ViewController {
@@ -105,7 +109,9 @@ extension ViewController {
         return PersonTableViewModel(title: attributedString)
     }
     
-    @objc private func pushAddItemAction() {
+    @objc private func routeCreateContactAction() {
+        if tableView.isEditing { editAction() }
+        
         let storyboard = UIStoryboard(name: "CreateNewContactStoryboard", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "CreateNewContactViewController") as! CreateNewContactViewController
         viewController.saveCompletion = saveCompletion
@@ -147,6 +153,8 @@ extension ViewController {
         deleteHeader(indexPath)
         
         tableView.endUpdates()
+        
+        tableView.reloadData()
     }
     
     private func deleteRow(_ indexPath: IndexPath) {
@@ -169,8 +177,7 @@ extension ViewController {
             
             sections.remove(at: indexPath.section)
             tableView.deleteSections([indexPath.section], with: .bottom)
-            
-            print("Sections: \(sections)")
+
             if personNames.isEmpty && sections.isEmpty {
                 editAction()
             }
