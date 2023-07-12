@@ -11,11 +11,15 @@ final class ChildhoodAndYouthPhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backToBeginningButton = UIBarButtonItem(title: "Начало", style: .plain, target: self, action: #selector(goToTheBeginningAction))
-        navigationItem.rightBarButtonItem = backToBeginningButton
+        setupNavigationBar()
     }
     
-    @objc func goToTheBeginningAction() {
-        navigationController?.popToRootViewController(animated: true)
+    @objc private func goToTheBeginningAction() {
+        popToRootViewController()
+    }
+    
+    private func setupNavigationBar() {
+        let backToBeginningButton = UIBarButtonItem(title: "Начало", style: .plain, target: self, action: #selector(goToTheBeginningAction))
+        navigationItem.rightBarButtonItem = backToBeginningButton
     }
 }

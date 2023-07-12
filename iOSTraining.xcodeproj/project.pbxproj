@@ -15,6 +15,8 @@
 		E5888AFF2A39F0C100BFC285 /* QueenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5888AFE2A39F0C100BFC285 /* QueenStoryboard.storyboard */; };
 		E5888B012A3A00CB00BFC285 /* ChildhoodAndYouthPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5888B002A3A00CB00BFC285 /* ChildhoodAndYouthPhotoViewController.swift */; };
 		E5888B032A3A00E200BFC285 /* ChildhoodAndYouthPhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5888B022A3A00E200BFC285 /* ChildhoodAndYouthPhotoStoryboard.storyboard */; };
+		E5A9257D2A5E9BBA003FE2FB /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9257C2A5E9BBA003FE2FB /* UIViewControllerExtensions.swift */; };
+		E5A9257F2A5E9E56003FE2FB /* NavigationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9257E2A5E9E56003FE2FB /* NavigationKeys.swift */; };
 		E5B0FE1B2A39C73600A4225F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0FE1A2A39C73600A4225F /* AppDelegate.swift */; };
 		E5B0FE1D2A39C73600A4225F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0FE1C2A39C73600A4225F /* SceneDelegate.swift */; };
 		E5B0FE1F2A39C73600A4225F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0FE1E2A39C73600A4225F /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 		E5888AFE2A39F0C100BFC285 /* QueenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QueenStoryboard.storyboard; sourceTree = "<group>"; };
 		E5888B002A3A00CB00BFC285 /* ChildhoodAndYouthPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildhoodAndYouthPhotoViewController.swift; sourceTree = "<group>"; };
 		E5888B022A3A00E200BFC285 /* ChildhoodAndYouthPhotoStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChildhoodAndYouthPhotoStoryboard.storyboard; sourceTree = "<group>"; };
+		E5A9257C2A5E9BBA003FE2FB /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		E5A9257E2A5E9E56003FE2FB /* NavigationKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationKeys.swift; sourceTree = "<group>"; };
 		E5B0FE172A39C73600A4225F /* iOSTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B0FE1A2A39C73600A4225F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5B0FE1C2A39C73600A4225F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5A9257B2A5E9BA5003FE2FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5A9257C2A5E9BBA003FE2FB /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E5B0FE0E2A39C73600A4225F = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +88,7 @@
 		E5B0FE192A39C73600A4225F /* iOSTraining */ = {
 			isa = PBXGroup;
 			children = (
+				E5A9257B2A5E9BA5003FE2FB /* Extensions */,
 				E5B0FE1A2A39C73600A4225F /* AppDelegate.swift */,
 				E5B0FE1C2A39C73600A4225F /* SceneDelegate.swift */,
 				E5B0FE1E2A39C73600A4225F /* ViewController.swift */,
@@ -93,6 +106,7 @@
 				E5888AFE2A39F0C100BFC285 /* QueenStoryboard.storyboard */,
 				E5888B002A3A00CB00BFC285 /* ChildhoodAndYouthPhotoViewController.swift */,
 				E5888B022A3A00E200BFC285 /* ChildhoodAndYouthPhotoStoryboard.storyboard */,
+				E5A9257E2A5E9E56003FE2FB /* NavigationKeys.swift */,
 			);
 			path = iOSTraining;
 			sourceTree = "<group>";
@@ -177,8 +191,10 @@
 				E5B0FE2F2A39C97D00A4225F /* BusinessCardViewController.swift in Sources */,
 				E5B0FE1F2A39C73600A4225F /* ViewController.swift in Sources */,
 				E5888AFD2A39F0AD00BFC285 /* QueenViewController.swift in Sources */,
+				E5A9257D2A5E9BBA003FE2FB /* UIViewControllerExtensions.swift in Sources */,
 				E5888AF42A39EA4700BFC285 /* ChildhoodAndYouthViewController.swift in Sources */,
 				E5B0FE1B2A39C73600A4225F /* AppDelegate.swift in Sources */,
+				E5A9257F2A5E9E56003FE2FB /* NavigationKeys.swift in Sources */,
 				E5B0FE1D2A39C73600A4225F /* SceneDelegate.swift in Sources */,
 				E5888AF92A39F00D00BFC285 /* FirstStepsGloryViewController.swift in Sources */,
 			);

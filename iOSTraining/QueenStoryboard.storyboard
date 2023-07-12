@@ -11,7 +11,7 @@
         <!--Queen View Controller-->
         <scene sceneID="lhV-bH-laQ">
             <objects>
-                <viewController storyboardIdentifier="QueenViewController" id="7tQ-cU-YG0" customClass="QueenViewController" customModule="BusinessCardApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QueenStoryboard" id="7tQ-cU-YG0" customClass="QueenViewController" customModule="iOSTraining" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T2E-1Z-eTU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8T-Wh-N1v">
                                                 <rect key="frame" x="25" y="8" width="343" height="1176.6666666666667"/>
-                                                <mutableString key="text">После окончания формирования группы Меркьюри создал их герб: в основу лег герб Великобритании и были добавлены изображения зодиакальных знаков членов музыкального союза, а именно два льва, рак и дева.
+                                                <string key="text">После окончания формирования группы Меркьюри создал их герб: в основу лег герб Великобритании и были добавлены изображения зодиакальных знаков членов музыкального союза, а именно два льва, рак и дева.
 
 Меркьюри играл ведущую роль в формировании всей концепции группы, в том числе музыкальной: ему принадлежит авторство подавляющего большинства композиций, например, лирической баллады «Love Of My Life» (1975), неповторимой «Bohemian Rhapsody», а также песни «We Are The Champions» (1977), которая стала гимном спортболельщиков.
 
@@ -32,7 +32,7 @@
 
 Меркьюри играл ведущую роль в формировании всей концепции группы, в том числе музыкальной: ему принадлежит авторство подавляющего большинства композиций, например, лирической баллады «Love Of My Life» (1975), неповторимой «Bohemian Rhapsody», а также песни «We Are The Champions» (1977), которая стала гимном спортболельщиков.
 
-В 1972 году Фредди добавляет к своему вымышленному имени псевдоним Меркьюри, что означает «меркурий» или «ртуть», ведь этот металл, как известно, очень текучий – Фредди был таким же гибким, быстрым. В 1973 он официально сменил имя. В этом же году группа выпускает свой первый альбом «Trident», который в одночасье стал популярен. Высококачественный стадионный рок и разнообразие жанров, в которых работали музыканты, вызывали у слушателей восторг, многие сравнивали их с The Beatles.</mutableString>
+В 1972 году Фредди добавляет к своему вымышленному имени псевдоним Меркьюри, что означает «меркурий» или «ртуть», ведь этот металл, как известно, очень текучий – Фредди был таким же гибким, быстрым. В 1973 он официально сменил имя. В этом же году группа выпускает свой первый альбом «Trident», который в одночасье стал популярен. Высококачественный стадионный рок и разнообразие жанров, в которых работали музыканты, вызывали у слушателей восторг, многие сравнивали их с The Beatles.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
