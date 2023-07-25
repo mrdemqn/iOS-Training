@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Student Details View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="StudentDetailsStoryboard" id="Y6W-OH-hqX" customClass="StudentDetailsViewController" customModule="iOSTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoC-Pl-tme">
+                                <rect key="frame" x="25" y="89" width="343" height="26.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqI-z5-Xgi">
+                                <rect key="frame" x="25" y="130.33333333333334" width="343" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JH4-gD-Lem">
+                                <rect key="frame" x="25" y="171.66666666666666" width="343" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IoC-Pl-tme" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="1Hw-3d-GUG"/>
+                            <constraint firstItem="IqI-z5-Xgi" firstAttribute="trailing" secondItem="IoC-Pl-tme" secondAttribute="trailing" id="6op-uP-EZy"/>
+                            <constraint firstItem="IqI-z5-Xgi" firstAttribute="top" secondItem="IoC-Pl-tme" secondAttribute="bottom" constant="15" id="Age-LP-HKE"/>
+                            <constraint firstItem="JH4-gD-Lem" firstAttribute="leading" secondItem="IqI-z5-Xgi" secondAttribute="leading" id="WiI-UR-Mr7"/>
+                            <constraint firstItem="IqI-z5-Xgi" firstAttribute="leading" secondItem="IoC-Pl-tme" secondAttribute="leading" id="Y13-uH-iLL"/>
+                            <constraint firstItem="IoC-Pl-tme" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="Zez-D0-ZZi"/>
+                            <constraint firstItem="JH4-gD-Lem" firstAttribute="top" secondItem="IqI-z5-Xgi" secondAttribute="bottom" constant="15" id="gKf-7R-IuD"/>
+                            <constraint firstItem="JH4-gD-Lem" firstAttribute="trailing" secondItem="IqI-z5-Xgi" secondAttribute="trailing" id="lLz-fi-p6z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IoC-Pl-tme" secondAttribute="trailing" constant="25" id="nBk-Xk-u4e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="IqI-z5-Xgi" id="vER-FE-COc"/>
+                        <outlet property="nameLabel" destination="IoC-Pl-tme" id="efl-dk-Gol"/>
+                        <outlet property="teacherLabel" destination="JH4-gD-Lem" id="VoK-lB-JtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

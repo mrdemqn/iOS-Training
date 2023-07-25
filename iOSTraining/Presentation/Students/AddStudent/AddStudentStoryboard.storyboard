@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Student View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddStudentStoryboard" id="Y6W-OH-hqX" customClass="AddStudentViewController" customModule="iOSTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPT-lN-ea8">
+                                <rect key="frame" x="25" y="79" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0L7-9e-PTC">
+                                <rect key="frame" x="25" y="123" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yNA-oR-xlH">
+                                <rect key="frame" x="25" y="231" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk7-DF-Dhj">
+                                <rect key="frame" x="25" y="305" width="343" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="DZu-WC-clR"/>
+                                </constraints>
+                                <color key="tintColor" name="Purple"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choose Teacher">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" name="Purple"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chooseTeacherAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Cdg-Jl-MuE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSs-nw-UFj">
+                                <rect key="frame" x="25" y="390" width="343" height="55"/>
+                                <color key="backgroundColor" name="Purple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="K77-hK-R0a"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveStudentAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3fp-K3-3iq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWj-pQ-7z1">
+                                <rect key="frame" x="25" y="187" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zWj-pQ-7z1" firstAttribute="leading" secondItem="0L7-9e-PTC" secondAttribute="leading" id="3ew-Go-VHR"/>
+                            <constraint firstItem="yNA-oR-xlH" firstAttribute="leading" secondItem="zWj-pQ-7z1" secondAttribute="leading" id="7Ve-jp-YsJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GPT-lN-ea8" secondAttribute="trailing" constant="25" id="Jgv-ve-pM8"/>
+                            <constraint firstItem="0L7-9e-PTC" firstAttribute="top" secondItem="GPT-lN-ea8" secondAttribute="bottom" constant="15" id="Loo-IP-MiF"/>
+                            <constraint firstItem="Jk7-DF-Dhj" firstAttribute="trailing" secondItem="yNA-oR-xlH" secondAttribute="trailing" id="ZFT-ex-xs6"/>
+                            <constraint firstItem="yNA-oR-xlH" firstAttribute="trailing" secondItem="zWj-pQ-7z1" secondAttribute="trailing" id="ZOt-45-quU"/>
+                            <constraint firstItem="Jk7-DF-Dhj" firstAttribute="top" secondItem="yNA-oR-xlH" secondAttribute="bottom" constant="40" id="ahU-5y-Xte"/>
+                            <constraint firstItem="HSs-nw-UFj" firstAttribute="top" secondItem="Jk7-DF-Dhj" secondAttribute="bottom" constant="30" id="aia-jl-hWJ"/>
+                            <constraint firstItem="Jk7-DF-Dhj" firstAttribute="leading" secondItem="yNA-oR-xlH" secondAttribute="leading" id="b93-Vo-sg0"/>
+                            <constraint firstItem="0L7-9e-PTC" firstAttribute="trailing" secondItem="GPT-lN-ea8" secondAttribute="trailing" id="bqG-cg-7yQ"/>
+                            <constraint firstItem="HSs-nw-UFj" firstAttribute="trailing" secondItem="Jk7-DF-Dhj" secondAttribute="trailing" id="da0-zm-hNA"/>
+                            <constraint firstItem="GPT-lN-ea8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="dfS-eq-k0v"/>
+                            <constraint firstItem="0L7-9e-PTC" firstAttribute="leading" secondItem="GPT-lN-ea8" secondAttribute="leading" id="lW6-vA-djR"/>
+                            <constraint firstItem="zWj-pQ-7z1" firstAttribute="trailing" secondItem="0L7-9e-PTC" secondAttribute="trailing" id="mHk-GK-pqa"/>
+                            <constraint firstItem="zWj-pQ-7z1" firstAttribute="top" secondItem="0L7-9e-PTC" secondAttribute="bottom" constant="30" id="rI5-o7-mcg"/>
+                            <constraint firstItem="GPT-lN-ea8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="sJa-Bf-9cT"/>
+                            <constraint firstItem="yNA-oR-xlH" firstAttribute="top" secondItem="zWj-pQ-7z1" secondAttribute="bottom" constant="15" id="t5z-1N-dSP"/>
+                            <constraint firstItem="HSs-nw-UFj" firstAttribute="leading" secondItem="Jk7-DF-Dhj" secondAttribute="leading" id="wnn-Cl-sIG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="yNA-oR-xlH" id="nRS-LF-93I"/>
+                        <outlet property="chooseTeacherButton" destination="Jk7-DF-Dhj" id="tLs-9o-Jsd"/>
+                        <outlet property="nameTextField" destination="0L7-9e-PTC" id="170-D0-szd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Purple">
+            <color red="0.68235294117647061" green="0.32156862745098042" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

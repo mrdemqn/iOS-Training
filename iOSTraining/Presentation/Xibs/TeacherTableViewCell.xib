@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TeacherCell" rowHeight="57" id="QQE-Pc-uFm" customClass="TeacherTableViewCell" customModule="iOSTraining" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QQE-Pc-uFm" id="EYd-VD-P3j">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Lastname" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDB-dw-dEV">
+                        <rect key="frame" x="20" y="15" width="353" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="m89-HN-hRq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cDB-dw-dEV" secondAttribute="bottom" constant="15" id="MyF-zb-5Q9"/>
+                    <constraint firstAttribute="trailing" secondItem="cDB-dw-dEV" secondAttribute="trailing" constant="20" symbolic="YES" id="O21-ys-vNC"/>
+                    <constraint firstItem="cDB-dw-dEV" firstAttribute="leading" secondItem="EYd-VD-P3j" secondAttribute="leading" constant="20" symbolic="YES" id="Wd9-xC-T0m"/>
+                    <constraint firstItem="cDB-dw-dEV" firstAttribute="top" secondItem="EYd-VD-P3j" secondAttribute="top" constant="15" id="wxx-KU-Z4r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="teacherLabel" destination="cDB-dw-dEV" id="wua-Tk-B15"/>
+            </connections>
+            <point key="canvasLocation" x="43.511450381679388" y="-46.83098591549296"/>
+        </tableViewCell>
+    </objects>
+</document>
