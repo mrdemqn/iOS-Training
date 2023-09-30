@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Queen View Controller-->
+        <scene sceneID="lhV-bH-laQ">
+            <objects>
+                <viewController storyboardIdentifier="QueenStoryboard" id="7tQ-cU-YG0" customClass="QueenViewController" customModule="iOSTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T2E-1Z-eTU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7B-hy-7NO">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84j-UR-kpw">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1209.6666666666667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8T-Wh-N1v">
+                                                <rect key="frame" x="25" y="8" width="343" height="1176.6666666666667"/>
+                                                <string key="text">После окончания формирования группы Меркьюри создал их герб: в основу лег герб Великобритании и были добавлены изображения зодиакальных знаков членов музыкального союза, а именно два льва, рак и дева.
+
+Меркьюри играл ведущую роль в формировании всей концепции группы, в том числе музыкальной: ему принадлежит авторство подавляющего большинства композиций, например, лирической баллады «Love Of My Life» (1975), неповторимой «Bohemian Rhapsody», а также песни «We Are The Champions» (1977), которая стала гимном спортболельщиков.
+
+В 1972 году Фредди добавляет к своему вымышленному имени псевдоним Меркьюри, что означает «меркурий» или «ртуть», ведь этот металл, как известно, очень текучий – Фредди был таким же гибким, быстрым. В 1973 он официально сменил имя. В этом же году группа выпускает свой первый альбом «Trident», который в одночасье стал популярен. Высококачественный стадионный рок и разнообразие жанров, в которых работали музыканты, вызывали у слушателей восторг, многие сравнивали их с The Beatles.
+
+Меркьюри играл ведущую роль в формировании всей концепции группы, в том числе музыкальной: ему принадлежит авторство подавляющего большинства композиций, например, лирической баллады «Love Of My Life» (1975), неповторимой «Bohemian Rhapsody», а также песни «We Are The Champions» (1977), которая стала гимном спортболельщиков.
+
+В 1972 году Фредди добавляет к своему вымышленному имени псевдоним Меркьюри, что означает «меркурий» или «ртуть», ведь этот металл, как известно, очень текучий – Фредди был таким же гибким, быстрым. В 1973 он официально сменил имя. В этом же году группа выпускает свой первый альбом «Trident», который в одночасье стал популярен. Высококачественный стадионный рок и разнообразие жанров, в которых работали музыканты, вызывали у слушателей восторг, многие сравнивали их с The Beatles.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="U8T-Wh-N1v" secondAttribute="bottom" constant="25" id="8vR-c4-dfr"/>
+                                            <constraint firstItem="U8T-Wh-N1v" firstAttribute="top" secondItem="84j-UR-kpw" secondAttribute="top" constant="8" id="Shy-ma-TR9"/>
+                                            <constraint firstItem="U8T-Wh-N1v" firstAttribute="leading" secondItem="84j-UR-kpw" secondAttribute="leading" constant="25" id="d7Q-0d-E0l"/>
+                                            <constraint firstAttribute="trailing" secondItem="U8T-Wh-N1v" secondAttribute="trailing" constant="25" id="oD7-cr-EA0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="84j-UR-kpw" secondAttribute="trailing" id="Aon-74-6RS"/>
+                                    <constraint firstAttribute="bottom" secondItem="84j-UR-kpw" secondAttribute="bottom" id="Bej-9L-1eG"/>
+                                    <constraint firstItem="84j-UR-kpw" firstAttribute="leading" secondItem="f7B-hy-7NO" secondAttribute="leading" id="N7j-GM-9ad"/>
+                                    <constraint firstItem="84j-UR-kpw" firstAttribute="top" secondItem="f7B-hy-7NO" secondAttribute="top" id="Wk5-Gl-q4A"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6eJ-UD-bjC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f7B-hy-7NO" firstAttribute="top" secondItem="6eJ-UD-bjC" secondAttribute="top" id="4Tq-Gt-Nol"/>
+                            <constraint firstItem="f7B-hy-7NO" firstAttribute="leading" secondItem="6eJ-UD-bjC" secondAttribute="leading" id="Dku-lZ-63N"/>
+                            <constraint firstItem="84j-UR-kpw" firstAttribute="width" secondItem="T2E-1Z-eTU" secondAttribute="width" id="IHl-1V-Y9F"/>
+                            <constraint firstItem="f7B-hy-7NO" firstAttribute="trailing" secondItem="6eJ-UD-bjC" secondAttribute="trailing" id="PQ7-n0-j9X"/>
+                            <constraint firstAttribute="bottom" secondItem="f7B-hy-7NO" secondAttribute="bottom" id="lD4-7j-nUe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="non-XG-XFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536.64122137404581" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
